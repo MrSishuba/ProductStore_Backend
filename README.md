@@ -27,30 +27,24 @@ Prerequisites
 .NET 6 SDK or later installed.
 SQL Server for the database.
 Setup Instructions
-Clone the repository:
 
-bash
+Clone the repository:
 Copy code
 git clone https://github.com/YourUsername/ProductStore_Backend.git  
 cd ProductStore_Backend  
 Update the appsettings.json file with your SQL Server connection string:
-
-json
-Copy code
 "ConnectionStrings": {  
     "DefaultConnection": "Server=YOUR_SERVER;Database=YOUR_DATABASE;Trusted_Connection=True;"  
 }  
+
 Apply migrations to set up the database:
-
-bash
 Copy code
-dotnet ef database update  
-Run the application:
+dotnet ef database update 
 
-bash
+Run the application:
 Copy code
 dotnet run  
-Test the API endpoints using a tool like Postman or integrate with the frontend.
+Test the API endpoints using swagger or integrate with the frontend.
 
 Key Endpoints
 User Management:
